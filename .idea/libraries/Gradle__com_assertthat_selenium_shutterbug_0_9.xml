@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.assertthat:selenium-shutterbug:0.9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assertthat/selenium-shutterbug/0.9/selenium-shutterbug-0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d6093a1d-a806-4bba-85f1-93835812b125" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Vz2XdJizaOwlo2WSmt4INGGnRL" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1578241643496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578241643496</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="470" y="197" key="git4idea.merge.GitPullDialog" timestamp="1578241773751">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="470" y="197" key="git4idea.merge.GitPullDialog/0.0.1536.783@0.0.1536.783" timestamp="1578241773751" />
+    <state x="520" y="303" key="git4idea.ui.GitStashDialog" timestamp="1578241762260">
+      <screen x="0" y="0" width="1536" height="783" />
+    </state>
+    <state x="520" y="303" key="git4idea.ui.GitStashDialog/0.0.1536.783@0.0.1536.783" timestamp="1578241762260" />
+  </component>
+</project>

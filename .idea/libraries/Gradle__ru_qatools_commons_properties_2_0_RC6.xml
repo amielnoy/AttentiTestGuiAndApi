@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.qatools.commons:properties:2.0.RC6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/qatools/commons/properties/2.0.RC6/properties-2.0.RC6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
