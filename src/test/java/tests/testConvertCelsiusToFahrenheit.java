@@ -1,5 +1,6 @@
 package tests;
 
+import controllers.BaseMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.initializePageObjects.PageFactoryInitializer;
@@ -7,7 +8,7 @@ import pageObjects.pages.unitToOtherUnitPage;
 import pageObjects.pages.mainConversionsPage;
 import utils.ExplicitWaiting;
 
-public class testConvertCelsiusToFahrenheit extends PageFactoryInitializer {
+public class testConvertCelsiusToFahrenheit extends BaseMethod {
     @Test
     public void TestConvertCelsiusToFahrenheit() throws Exception {
         String inputCelciusValueToConvertToFaranhiet = "40";
