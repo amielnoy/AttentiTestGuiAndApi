@@ -2,38 +2,22 @@ package pageObjects.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.initializePageObjects.PageFactoryInitializer;
 import utils.ExplicitWaiting;
-import utils.seleniumActions;
 import io.qameta.allure.Allure;
 
-import static java.sql.DriverManager.println;
 import org.apache.log4j.Logger;
+import utils.seleniumActions;
 
-public class mainConversionsPage  extends PageFactoryInitializer {
-    final static Logger logger = Logger.getLogger(mainConversionsPage.class);
+public class mainPage extends PageFactoryInitializer {
+    final static Logger logger = Logger.getLogger(mainPage.class);
 
     protected WebElement languageSelector =getWebDriver().findElement(By.id("ChooseLanguageDlgOpener"));
     protected WebElement floatingMenu =getWebDriver().findElement(By.id("Col1"));
-//    protected WebElement inputToConversion =getWebDriver().findElement(By.id("queryTo"));
-//    protected WebElement WebElementLinkTemperture=getWebDriver().findElement(By.xpath("//*[@id='typeMenu']/a[1]"));
-//    protected By BySecondLinkCelciusToFaranhiet = By.xpath("//*[@id='popLinks']/ol/li[1]/a");
-//
-//    protected WebElement WebElementLinkLength=getWebDriver().findElement(By.xpath("//*[@id='typeMenu']/a[3]"));
-//    protected By BySecondLinkConvertMetersToFeet= By.xpath("//ol/li[1]/a[text()='Meters to Feet']");
-//
-//    protected WebElement WebElementLinkWeight=getWebDriver().findElement(By.xpath("//*[@id='typeMenu']/a[2]"));
-    //*[@id="popLinks"]/ol/li[5]/a
-    //*[@id="popLinks"]/ol/li[5]/a
-    @BeforeMethod
-    protected void Setup(){
-        ExplicitWaiting.driver =getWebDriver();
-    }
-    @Test
-    public mainConversionsPage mouseHover(String language)
+
+    public String mouseHover()
     {
         languageSelector =getWebDriver().findElement(By.id("ChooseLanguageDlgOpener"));
         floatingMenu =getWebDriver().findElement(By.id("Col1"));
@@ -42,14 +26,36 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         //languageSelector.click();
         System.out.println("HOVERING LANG'");
         mousehover(languageSelector);
-        logger.debug("floating menu elements text:"+languageSelector.getText());
+        //get all the values of the floating menue
         logger.debug("floating menu elements text:"+floatingMenu.getText());
+        Allure.description("reporting floating elements after hovering: "+languageSelector.getText());
+        return floatingMenu.getText();
+    }
 
+
+    public mainPage chooseLanguage(String language)
+    {
+        //"//div[@id='Col1']/ul/li[2]";
+        WebElement floatingMenuItem2 =getWebDriver().findElement(By.xpath("//div[@id='Col1']/ul/li[2])"));
+        final String EXPECTED_LANGUGES="English\n" +
+                "Deutsch\n" +
+                "Suomi";
+
+        mouseHover();
+        languageSelector =getWebDriver().findElement(By.id("ChooseLanguageDlgOpener"));
+        //floatingMenu =getWebDriver().findElement(By.id("Col1"));
+        ExplicitWaiting.driver =getWebDriver();
+        floatingMenuItem2 =getWebDriver().findElement(By.xpath("//div[@id='Col1']/ul/li[2])"));
+        ExplicitWaiting.explicitWaitVisibilityOfElement(floatingMenuItem2,10);
+
+        seleniumActions.clickButton(floatingMenuItem2,EXPECTED_LANGUGES);
+        //get all the values of the floating menue
+        logger.debug("floating menu elements text:"+floatingMenu.getText());
         Allure.description("reporting floating elements after hovering: "+languageSelector.getText());
         return this;
     }
 
-    public mainConversionsPage clickFirstTempertureButton()
+    public mainPage clickFirstTempertureButton()
     {
         System.out.println("CLICKING BUTTON FIRST TEMPERTURE CONVERSION");
         //seleniumActions.clickButton(WebElementLinkTemperture,"Temperature");
@@ -58,7 +64,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickFirstMeterToFeetButton()
+    public mainPage clickFirstMeterToFeetButton()
     {
         System.out.println("CLICKING BUTTON FIRST METER TO FEET CONVERSION");
         //seleniumActions.clickButton(WebElementLinkLength,"Length");
@@ -67,7 +73,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickFirstWeightConversionButton()
+    public mainPage clickFirstWeightConversionButton()
     {
         System.out.println("CLICKING BUTTON FIRST WEIGHT CONVERSION");
         //seleniumActions.clickButton(WebElementLinkWeight,"Weight");
@@ -77,7 +83,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
     }
 
 
-    public mainConversionsPage clickSecondTempertureButton()
+    public mainPage clickSecondTempertureButton()
     {
         System.out.println("CLICKING SECOND BUTTON TEMPERTURE CONVERSION");
         //ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkCelciusToFaranhiet,3);
@@ -86,7 +92,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickSecondMeterToFeetButton()
+    public mainPage clickSecondMeterToFeetButton()
     {
         System.out.println("CLICKING SECOND BUTTON TEMPERTURE CONVERSION");
         //ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkConvertMetersToFeet,3);
@@ -94,7 +100,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickSecondOunceToGramsButton()
+    public mainPage clickSecondOunceToGramsButton()
     {
         System.out.println("CLICKING SECOND BUTTON WEIGHT CONVERSION");
         //ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkConvertOuncesToGrams,3);
@@ -103,7 +109,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
     }
 
 
-    public mainConversionsPage verifyPageExsitance() throws Exception
+    public mainPage verifyPageExsitance() throws Exception
     {
 //        println("inputUsernameTextBox.getText()="+inputFromConversion.getText());
 //        Assert.assertEquals(inputFromConversion.getText(), "");

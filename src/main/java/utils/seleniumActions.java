@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class seleniumActions extends ExplicitWaiting {
-    public static void  clickButton(By currentBy,String textToBeVisible){
+        public static void  clickButton(By currentBy,String textToBeVisible){
         ExplicitWaiting.driver =getWebDriver();
         WebElement currentWebElement=getWebDriver().findElement(currentBy);
         ExplicitWaiting.explicitWaitElementToBeClickable(currentWebElement,10);
