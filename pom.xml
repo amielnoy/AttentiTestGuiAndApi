@@ -31,9 +31,16 @@
 		<htmlelements.version>1.19</htmlelements.version>
 		<automationremarksvideo.version>1.8</automationremarksvideo.version>
 		<ghostdriver.version>2.1.0</ghostdriver.version>
+		<aspectj.version>1.8.10</aspectj.version>
 	</properties>
 
-	<dependencies>
+    <dependencies>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.12.1</version>
+		</dependency>
 
 		<!-- Selenium Webdriver Dependency -->
 		<dependency>
@@ -271,14 +278,12 @@
 			<version>${automationremarksvideo.version}</version>
 		</dependency>
 
-
 		<!-- Selenium ShutterBag Dependeny to capture Images -->
 		<dependency>
 			<groupId>com.assertthat</groupId>
 			<artifactId>selenium-shutterbug</artifactId>
 			<version>0.9</version>
 		</dependency>
-
 
 		<!-- SL4J API Dependency -->
 		<dependency>
@@ -288,7 +293,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<!-- SL4J LOG4J Dependency -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -297,12 +301,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-maven -->
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-maven</artifactId>
-			<version>2.10.0</version>
-		</dependency>
+
 
 		<!-- JUL to SLF4J Bridge Dependency -->
 		<dependency>
@@ -320,18 +319,20 @@
 			<version>${slf4j.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.12.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.22.0</version>
+				<version>2.20</version>
 				<configuration>
-					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
-					<testFailureIgnore>true</testFailureIgnore>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
@@ -344,22 +345,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<plugin>
-				<groupId>io.qameta.allure</groupId>
-				<artifactId>allure-maven</artifactId>
-				<version>2.9</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.0</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-
-			</plugin>
-
 		</plugins>
 	</build>
 	<profiles>

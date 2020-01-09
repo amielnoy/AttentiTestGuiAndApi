@@ -1,0 +1,137 @@
+
+2020-01-09 11:16:20 DEBUG Preferences:118 - Preference chrome=79 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:16:20 DEBUG Preferences:118 - Preference chrome79=79.0.3945.36 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:16:20 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2020-01-09 11:16:20 DEBUG WebDriverManager:545 - Driver chromedriver 79.0.3945.36 found in cache
+2020-01-09 11:16:20 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\AmielShlomoZvi\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2020-01-09 11:16:35 INFO  MonteRecorder:39 - Recording started
+2020-01-09 11:16:35 DEBUG mainConversionsPage:45 - floating menu elements text:EN
+2020-01-09 11:16:35 DEBUG mainConversionsPage:46 - floating menu elements text:English
+Deutsch
+Suomi
+2020-01-09 11:32:21 DEBUG Preferences:118 - Preference chrome=79 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:32:21 DEBUG Preferences:118 - Preference chrome79=79.0.3945.36 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:32:21 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2020-01-09 11:32:21 DEBUG WebDriverManager:545 - Driver chromedriver 79.0.3945.36 found in cache
+2020-01-09 11:32:21 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\AmielShlomoZvi\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2020-01-09 11:32:21 INFO  RecordingUtils:26 - Video recording: 
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-01-09 11:32:22 DEBUG cache:44 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-01-09 11:32:22 DEBUG cache:44 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-01-09 11:32:22 DEBUG cache:44 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-01-09 11:33:29 DEBUG Preferences:118 - Preference chrome=79 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:33:29 DEBUG Preferences:118 - Preference chrome79=79.0.3945.36 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:33:29 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2020-01-09 11:33:29 DEBUG WebDriverManager:545 - Driver chromedriver 79.0.3945.36 found in cache
+2020-01-09 11:33:29 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\AmielShlomoZvi\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2020-01-09 11:33:29 INFO  RecordingUtils:26 - Video recording: 
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "test-view/standard.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/standard_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("test-view/standard.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "test-view/standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/test-view/standard.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-01-09 11:33:29 DEBUG cache:44 - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-01-09 11:33:29 DEBUG cache:44 - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-01-09 11:33:29 DEBUG cache:44 - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/AmielShlomoZvi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-01-09 11:34:33 DEBUG Preferences:118 - Preference chrome=79 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:34:33 DEBUG Preferences:118 - Preference chrome79=79.0.3945.36 (valid until 2020-01-10 07:31:52)
+2020-01-09 11:34:33 INFO  WebDriverManager:600 - Using chromedriver 79.0.3945.36 (since Google Chrome 79 is installed in your machine)
+2020-01-09 11:34:33 DEBUG WebDriverManager:545 - Driver chromedriver 79.0.3945.36 found in cache
+2020-01-09 11:34:33 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\AmielShlomoZvi\.m2\repository\webdriver\chromedriver\win32\79.0.3945.36\chromedriver.exe
+2020-01-09 11:34:46 INFO  MonteRecorder:39 - Recording started
+2020-01-09 11:34:53 DEBUG mainConversionsPage:45 - floating menu elements text:EN
+2020-01-09 11:34:53 DEBUG mainConversionsPage:46 - floating menu elements text:English
+Deutsch
+Suomi
+2020-01-09 11:35:09 INFO  MonteRecorder:45 - Recording finished to D:\Projects\JobTests\AttentiTestGuiAndApi\video\TestHoverAndGetAllLanuageOptions_recording_2020_09_01_11_35_09.avi
+2020-01-09 11:35:09 INFO  RecordingUtils:65 - No jenkins_url variable found.
+2020-01-09 11:35:09 INFO  RecordingUtils:26 - Video recording: D:\Projects\JobTests\AttentiTestGuiAndApi\video\TestHoverAndGetAllLanuageOptions_recording_2020_09_01_11_35_09.avi
+2020-01-09 11:35:51 INFO  MonteRecorder:39 - Recording started
+2020-01-09 11:35:56 DEBUG mainConversionsPage:45 - floating menu elements text:EN
+2020-01-09 11:35:56 DEBUG mainConversionsPage:46 - floating menu elements text:English
+Deutsch
+Suomi
+2020-01-09 11:35:57 INFO  MonteRecorder:45 - Recording finished to D:\Projects\JobTests\AttentiTestGuiAndApi\video\TestHoverAndGetAllLanuageOptions_recording_2020_09_01_11_35_57.avi
+2020-01-09 11:35:57 INFO  RecordingUtils:65 - No jenkins_url variable found.
+2020-01-09 11:35:57 INFO  RecordingUtils:26 - Video recording: D:\Projects\JobTests\AttentiTestGuiAndApi\video\TestHoverAndGetAllLanuageOptions_recording_2020_09_01_11_35_57.avi
+2020-01-09 11:36:42 INFO  MonteRecorder:39 - Recording started
+2020-01-09 11:37:04 DEBUG mainConversionsPage:45 - floating menu elements text:EN
+2020-01-09 11:37:04 DEBUG mainConversionsPage:46 - floating menu elements text:English
+Deutsch
+Suomi

@@ -40,7 +40,7 @@ public class BrowserFactory extends InitMethod
 			break;
 
 		case "chrome_headless":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--headless");  
 			chromeOptions.addArguments("--disable-gpu");  
@@ -48,25 +48,25 @@ public class BrowserFactory extends InitMethod
 			break;
 
 		case  "firefox":
-			System.setProperty("webdriver.gecko.driver", "src/main/resources/Drivers/geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", "src/main/resources/Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 			break;
 
 		case  "ie":
 		case "internet explorer":
-			System.setProperty("webdriver.ie.driver", "src/main/resources/Drivers/IEDriverServer.exe");
+			//System.setProperty("webdriver.ie.driver", "src/main/resources/Drivers/IEDriverServer.exe");
 			DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer(); 
 			ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,true);
 			break;	
 
 		case  "edge":
-			System.setProperty("webdriver.edge.driver", "src/main/resources/Drivers/MicrosoftWebDriver.exe");
+			//System.setProperty("webdriver.edge.driver", "src/main/resources/Drivers/MicrosoftWebDriver.exe");
 			driver = new EdgeDriver();
 			break;
 
 
 		case  "opera":
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
 			capabilities = DesiredCapabilities.opera();
 			ChromeOptions optionsOpera = new ChromeOptions();
 			optionsOpera.setBinary("C:/Program Files/Opera/launcher.exe");
