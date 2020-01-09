@@ -1,5 +1,6 @@
 package pageObjects.WebServicesUtils;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
@@ -11,7 +12,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
 public class WebServicesKeywords {
     public static String getHttpResponse(String url) throws IOException {
         URL obj = new URL(url);
