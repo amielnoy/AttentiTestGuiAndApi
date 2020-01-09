@@ -24,7 +24,7 @@ import com.aventstack.extentreports.ExtentTest;
  */
 public class InitMethod
 {
-	public static ApplicationConfigReader appConfig = new ApplicationConfigReader();
+	public static ApplicationConfig appConfig = new ApplicationConfig();
 	
 	public static String WebsiteURL = appConfig.getWebsiteUrl();
 	public static String Browser = appConfig.getBrowser();

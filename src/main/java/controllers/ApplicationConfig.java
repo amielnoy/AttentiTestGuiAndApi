@@ -10,10 +10,10 @@ import ru.qatools.properties.PropertyLoader;
 import ru.qatools.properties.Resource;
 
 @Resource.Classpath("ApplicationConfig.properties")
-public class ApplicationConfigReader 
+public class ApplicationConfig
 {
 	
-	public ApplicationConfigReader()
+	public ApplicationConfig()
 	{
 		PropertyLoader.newInstance().populate(this);
 	}
@@ -22,7 +22,7 @@ public class ApplicationConfigReader
 	private String Browser;
 	
 	@Property(value="Url")
-	private String WebsiteUrl;
+	private static String WebsiteUrl;
 	
 	@Property(value="MaxPageLoadTime")
 	private int MaxPageLoadTime;
@@ -36,6 +36,10 @@ public class ApplicationConfigReader
 
 	public String getWebsiteUrl() {
 		return WebsiteUrl;
+	}
+
+	public static void setWebsiteUrl(String newWebsiteUrl) {
+		WebsiteUrl=newWebsiteUrl;
 	}
 
 	public int getMaxPageLoadTime() {
