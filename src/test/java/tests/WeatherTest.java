@@ -1,6 +1,7 @@
 package tests;
 
 
+import controllers.BaseMethod;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -11,16 +12,19 @@ import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.WebServicesUtils.WebServicesKeywords;
+import pageObjects.pages.WeatherComPage;
 
 import java.io.IOException;
 
 import static io.qameta.allure.Allure.step;
 
 
-public class WeatherTest  {
+public class WeatherTest extends BaseMethod {
     @Test(priority = 0, description = "Get the updated upload report to flicker site\n" +
             "using OkHttp")
     public void uploadStatus() {
+        WeatherComPage currWeatherComPage=new WeatherComPage();
+        String weatherComTemp="";//temperature in Fahrenheit use units=imperial
         step("produce request");
         //*********************
         //Using Open weather
@@ -32,8 +36,11 @@ public class WeatherTest  {
         in Fahrenheit
          */
         String weatherComUrl="https://weather.com/weather/today/l/8d5e48bc01c980a4d0feb2ef2678c978394a463d8381e7c9129d3c10c5e2550e";
-        float weatherComTemp=37f;//temperature in Fahrenheit use units=imperial
 
+        step("produce temp by gui from weather.com");
+        weatherComTemp= currWeatherComPage.getTempByZipCodeTempValue("20852");
+        weatherComTemp=weatherComTemp.substring(0,weatherComTemp.length()-1);
+        float weatherComFloatTemp=Float.parseFloat(weatherComTemp);
         step("produce responce");
         try {
             String response = WebServicesKeywords.getHttpResponse(urlTestOpenWheatherMap);
@@ -47,21 +54,12 @@ public class WeatherTest  {
             float temp=Float.valueOf(responceDetailsMain.get("temp").toString());
             System.out.println("temp="+temp);
             step("verify the two temps differ<=10%");
-            Assert.assertTrue(100*(temp-weatherComTemp)/100<=10, "main section(tempertures)");
+            Assert.assertTrue(100*(temp-weatherComFloatTemp)/100<=10, "main section(tempertures)");
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
-    @Test
-    public void testUsingRestAssured(){
-        String testApiKey="9ed975128151e2d14e3c956c3ea9ad0f";
-        String urlTestOpenWheatherMap="http://api.openweathermap.org/data/2.5/weather?zip=20852,us&units=imperial&APPID="+testApiKey;
-        String url="http://restapi.demoqa.com/utilities/weather/city";
-        Response response=WebServicesKeywords.getHttpResponceUsingRestAssured(url);
-        String responseBody=response.getBody().toString();
-        System.out.println("Response Body is =>  " + responseBody);
-    }
 
     @Test
     public void GetWeatherDetails()

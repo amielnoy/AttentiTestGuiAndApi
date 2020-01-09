@@ -1,10 +1,6 @@
 package pageObjects.pages;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pageObjects.initializePageObjects.PageFactoryInitializer;
 import utils.ExplicitWaiting;
@@ -13,7 +9,7 @@ import utils.seleniumActions;
 import static java.sql.DriverManager.println;
 
 
-public class mainConversionsPage  extends PageFactoryInitializer {
+public class MainConversionsPage extends PageFactoryInitializer {
     protected WebElement inputFromConversion =getWebDriver().findElement(By.id("queryFrom"));
     protected WebElement inputToConversion =getWebDriver().findElement(By.id("queryTo"));
 
@@ -27,7 +23,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
     //*[@id="popLinks"]/ol/li[5]/a
     //*[@id="popLinks"]/ol/li[5]/a
     protected By BySecondLinkConvertOuncesToGrams= By.xpath("//ol/li[5]/a[text()='Ounces to Grams']");
-    public mainConversionsPage clickFromConversion()
+    public MainConversionsPage clickFromConversion()
     {
         inputFromConversion =getWebDriver().findElement(By.id("queryFrom"));
         ExplicitWaiting.driver =getWebDriver();
@@ -37,7 +33,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickFirstTempertureButton()
+    public MainConversionsPage clickFirstTempertureButton()
     {
         System.out.println("CLICKING BUTTON FIRST TEMPERTURE CONVERSION");
         seleniumActions.clickButton(WebElementLinkTemperture,"Temperature");
@@ -46,7 +42,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickFirstMeterToFeetButton()
+    public MainConversionsPage clickFirstMeterToFeetButton()
     {
         System.out.println("CLICKING BUTTON FIRST METER TO FEET CONVERSION");
         seleniumActions.clickButton(WebElementLinkLength,"Length");
@@ -55,7 +51,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickFirstWeightConversionButton()
+    public MainConversionsPage clickFirstWeightConversionButton()
     {
         System.out.println("CLICKING BUTTON FIRST WEIGHT CONVERSION");
         seleniumActions.clickButton(WebElementLinkWeight,"Weight");
@@ -65,7 +61,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
     }
 
 
-    public mainConversionsPage clickSecondTempertureButton()
+    public MainConversionsPage clickSecondTempertureButton()
     {
         System.out.println("CLICKING SECOND BUTTON TEMPERTURE CONVERSION");
         ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkCelciusToFaranhiet,3);
@@ -74,7 +70,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickSecondMeterToFeetButton()
+    public MainConversionsPage clickSecondMeterToFeetButton()
     {
         System.out.println("CLICKING SECOND BUTTON TEMPERTURE CONVERSION");
         ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkConvertMetersToFeet,3);
@@ -82,7 +78,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
         return this;
     }
 
-    public mainConversionsPage clickSecondOunceToGramsButton()
+    public MainConversionsPage clickSecondOunceToGramsButton()
     {
         System.out.println("CLICKING SECOND BUTTON WEIGHT CONVERSION");
         ExplicitWaiting.explicitWaitElementToBeClickable(BySecondLinkConvertOuncesToGrams,3);
@@ -91,7 +87,7 @@ public class mainConversionsPage  extends PageFactoryInitializer {
     }
 
 
-    public mainConversionsPage verifyPageExsitance() throws Exception
+    public MainConversionsPage verifyPageExsitance() throws Exception
     {
         println("inputUsernameTextBox.getText()="+inputFromConversion.getText());
         Assert.assertEquals(inputFromConversion.getText(), "");

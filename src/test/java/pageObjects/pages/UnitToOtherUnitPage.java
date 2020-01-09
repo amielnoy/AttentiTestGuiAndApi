@@ -9,7 +9,7 @@ import utils.seleniumActions;
 import static java.sql.DriverManager.println;
 
 
-public class unitToOtherUnitPage extends PageFactoryInitializer {
+public class UnitToOtherUnitPage extends PageFactoryInitializer {
 
 
     public void SetSourceValue(String celceiusValue)

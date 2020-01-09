@@ -16,8 +16,8 @@ import pageObjects.pages.*;
 
 public class PageFactoryInitializer extends BaseMethod 
 {
-	public mainConversionsPage tdmMainPage()
+	public MainConversionsPage tdmMainPage()
 	{
-		return PageFactory.initElements(getWebDriver(), mainConversionsPage.class);
+		return PageFactory.initElements(getWebDriver(), MainConversionsPage.class);
 	}
 }

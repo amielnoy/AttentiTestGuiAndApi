@@ -3,10 +3,8 @@ package tests;
 import controllers.BaseMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.initializePageObjects.PageFactoryInitializer;
-import pageObjects.pages.unitToOtherUnitPage;
-import pageObjects.pages.mainConversionsPage;
-import utils.ExplicitWaiting;
+import pageObjects.pages.UnitToOtherUnitPage;
+import pageObjects.pages.MainConversionsPage;
 
 public class testConvertCelsiusToFahrenheit extends BaseMethod {
     @Test
@@ -16,8 +14,8 @@ public class testConvertCelsiusToFahrenheit extends BaseMethod {
         String actualCelciustoFaranhietResult;
         String expectedCelciustoFaranhietResult = "40°C= 104.0000°F";
 
-        mainConversionsPage currMainConversionsPage = new mainConversionsPage();
-        unitToOtherUnitPage currUnitToOtherUnitPage = new unitToOtherUnitPage();
+        MainConversionsPage currMainConversionsPage = new MainConversionsPage();
+        UnitToOtherUnitPage currUnitToOtherUnitPage = new UnitToOtherUnitPage();
         currMainConversionsPage.clickFromConversion();
         currMainConversionsPage.clickFirstTempertureButton();
         currMainConversionsPage.clickSecondTempertureButton();
@@ -35,8 +33,8 @@ public class testConvertCelsiusToFahrenheit extends BaseMethod {
         String actualMetersToFeetResult;
         String expectedCelciustoFaranhietResult = "10m= 32ft 9.700788in";
 
-        mainConversionsPage currMainConversionsPage = new mainConversionsPage();
-        unitToOtherUnitPage currUnitToOtherUnitPage = new unitToOtherUnitPage();
+        MainConversionsPage currMainConversionsPage = new MainConversionsPage();
+        UnitToOtherUnitPage currUnitToOtherUnitPage = new UnitToOtherUnitPage();
         currMainConversionsPage.clickFromConversion();
         currMainConversionsPage.clickFirstMeterToFeetButton();
         currMainConversionsPage.clickSecondMeterToFeetButton();
@@ -54,8 +52,8 @@ public class testConvertCelsiusToFahrenheit extends BaseMethod {
         String actualOuncesValueToGramsResult;
         String expectedOuncesToGramsResult = "10oz= 283.4952g";
 
-        mainConversionsPage currMainConversionsPage = new mainConversionsPage();
-        unitToOtherUnitPage currUnitToOtherUnitPage = new unitToOtherUnitPage();
+        MainConversionsPage currMainConversionsPage = new MainConversionsPage();
+        UnitToOtherUnitPage currUnitToOtherUnitPage = new UnitToOtherUnitPage();
         currMainConversionsPage.clickFromConversion();
         currMainConversionsPage.clickFirstWeightConversionButton();
         currMainConversionsPage.clickSecondOunceToGramsButton();
