@@ -3,7 +3,6 @@
  */
 package pageObjects.initializePageObjects;
 
-import controllers.ApplicationConfig;
 import org.openqa.selenium.support.PageFactory;
 
 import controllers.BaseMethod;
@@ -21,10 +20,10 @@ public class PageFactoryInitializer extends BaseMethod
 	{
 		return PageFactory.initElements(getWebDriver(), mainPage.class);
 	}
-	public tablePage tablePage()
+	public TablePage tablePage()
 	{
 		getWebDriver().navigate().to("http://www.w3schools.com/html/html_tables.asp");
 		//ApplicationConfig.setWebsiteUrl("http://www.w3schools.com/html/html_tables.asp");
-		return PageFactory.initElements(getWebDriver(), tablePage.class);
+		return PageFactory.initElements(getWebDriver(), TablePage.class);
 	}
 }

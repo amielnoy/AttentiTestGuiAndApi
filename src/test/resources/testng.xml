@@ -9,7 +9,7 @@
 	</listeners>
 	<test thread-count="1" name="Test">
 		<classes>
-			<class name="tests.test777" />
+			<class name="tests.testForZim1" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -23,7 +23,7 @@ public class textFileProvider
 	public static Object[][] excelSheetNameAsMethodName(Method method) throws Exception
 	{
 		File file = new File("src/test/resources/TestData/"+method.getName()+".txt");
-		System.out.println("Opening Excel File:" +file.getAbsolutePath());
+		System.out.println("Opening Text File:" +file.getAbsolutePath());
 		Object testObjArray[][] = getTwoDimArrayFromTxtFile(file.getAbsolutePath());
 		return testObjArray;
 	}
