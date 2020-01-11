@@ -25,8 +25,6 @@ public class TablePage extends PageFactoryInitializer {
         searchedColumnNameToIndexMap.put("Company","1");
         searchedColumnNameToIndexMap.put("Contact","2");
         searchedColumnNameToIndexMap.put("Country","3");
-        //tableRow = getWebDriver().findElement(By.id("//table/tbody/tr[2]"));
-        //tableRowElement = getWebDriver().findElement(By.id("//table/tbody/tr[text()=]"));
     }
     //xpath("//tbody/tr[text()='"+columnNameToIndexMap.get(searchColumn)+"']"));
     public boolean verifyTableCellText(WebElement table,
@@ -35,9 +33,6 @@ public class TablePage extends PageFactoryInitializer {
                                        String returnColumnText,
                                        String expectedText) throws Exception {
         table=getWebDriver().findElement(By.id("customers"));
-        WebElement tableRowElement = ((RemoteWebElement) table).findElement(By.
-                xpath("//tbody/tr["+ searchedColumnNameToIndexMap.get(searchColumn)+"]"));
-        WebElement TableCell=tableRowElement.findElement(By.xpath("//td[text()='" + searchText+"']"));
         boolean actualCellText=getTableCellText(table,searchColumn,searchText,returnColumnText);
         Assert.assertEquals(returnColumnText,expectedText,"The expected cell value "+searchText+"\n is not as expected");
         return true;
@@ -69,8 +64,6 @@ public class TablePage extends PageFactoryInitializer {
         try{
             if ((table == null) || searchColumn == "" || searchText == "")
                 return "ERROR";
-            WebElement tableRowElement = ((RemoteWebElement) table).findElement(By.
-                    xpath("//tbody/tr[contains(.,'" + searchText + "')]"));
 
             WebElement TableCell = table.findElement(By.xpath("//tbody/tr[contains(.,'" + searchText + "')]/td[" + searchedColumnNameToIndexMap.get(searchColumn) + "]"));
 
@@ -89,14 +82,5 @@ public class TablePage extends PageFactoryInitializer {
             e.printStackTrace();
         }
         return "ERROR";
-    }
-
-    protected boolean isSearchedTextIsFromTheDesiredColumn(
-            String searchColumn,
-            String searchText,
-            String  returnColumnText){
-        WebElement tableRowElement = getWebDriver().findElement(By.
-                xpath("//table/tbody/tr[contains(.,'"+searchText+"')]"));
-        return false;
     }
 }

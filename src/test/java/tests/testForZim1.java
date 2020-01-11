@@ -19,8 +19,8 @@ public class testForZim1 extends BaseMethod {
                 "Suomi";
         mainPage currMainPage = new mainPage();
         actualLangugesOption=currMainPage.mouseHover();
-        Allure.step("Actual language="+actualLangugesOption);
-        Allure.step("Expected language="+expectedLanguages);
+        Allure.step("Actual languages="+actualLangugesOption);
+        Allure.step("Expected languages="+expectedLanguages);
 
         Assert.assertEquals(actualLangugesOption,expectedLanguages,"not all the 3 lang's apear");
     }
