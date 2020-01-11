@@ -17,7 +17,6 @@ public class testTableForZim2 extends BaseMethod {
         TablePage tablePage=new TablePage();
         WebElement tableWebElement=getWebDriver().findElement(By.id("customers"));
         try {
-            //tablePage.getTableCellText(tableWebElement, tableColumnName, valueToSearchInColumn, expectedTableCellValue);
             tablePage.verifyTableCellText(tableWebElement, tableColumnName, valueToSearchInColumn, expectedTableCellValue, expectedTableCellValue);
         }
         catch(Exception e)

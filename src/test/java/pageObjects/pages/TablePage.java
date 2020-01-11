@@ -1,8 +1,9 @@
 package pageObjects.pages;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
@@ -16,13 +17,14 @@ public class TablePage extends PageFactoryInitializer {
     protected WebElement floatingMenu;
     protected WebElement tableRow;
     protected WebElement tableRowElement;
-    protected static HashMap<String, String> columnNameToIndexMap;
+    protected static HashMap<String, String> searchedColumnNameToIndexMap;
+
     public TablePage(){
         getWebDriver().navigate().to("http://www.w3schools.com/html/html_tables.asp");
-        columnNameToIndexMap=new HashMap<String, String>();
-        columnNameToIndexMap.put("Company","1");
-        columnNameToIndexMap.put("Contact","2");
-        columnNameToIndexMap.put("Country","3");
+        searchedColumnNameToIndexMap =new HashMap<String, String>();
+        searchedColumnNameToIndexMap.put("Company","1");
+        searchedColumnNameToIndexMap.put("Contact","2");
+        searchedColumnNameToIndexMap.put("Country","3");
         //tableRow = getWebDriver().findElement(By.id("//table/tbody/tr[2]"));
         //tableRowElement = getWebDriver().findElement(By.id("//table/tbody/tr[text()=]"));
     }
@@ -34,7 +36,7 @@ public class TablePage extends PageFactoryInitializer {
                                        String expectedText) throws Exception {
         table=getWebDriver().findElement(By.id("customers"));
         WebElement tableRowElement = ((RemoteWebElement) table).findElement(By.
-                xpath("//tbody/tr["+columnNameToIndexMap.get(searchColumn)+"]"));
+                xpath("//tbody/tr["+ searchedColumnNameToIndexMap.get(searchColumn)+"]"));
         WebElement TableCell=tableRowElement.findElement(By.xpath("//td[text()='" + searchText+"']"));
         boolean actualCellText=getTableCellText(table,searchColumn,searchText,returnColumnText);
         Assert.assertEquals(returnColumnText,expectedText,"The expected cell value "+searchText+"\n is not as expected");
@@ -42,7 +44,7 @@ public class TablePage extends PageFactoryInitializer {
     }
 
 
-    public boolean getTableCellText(WebElement table,
+    protected boolean getTableCellText(WebElement table,
                                    String searchColumn,
                                     String searchText,
                                     String returnColumnText) throws Exception {
@@ -57,19 +59,44 @@ public class TablePage extends PageFactoryInitializer {
         return true;
     }
 
-
+    @Step("using value at the row get value searched")
     public String getTableCellTextByXpath(
             WebElement table,
             String searchColumn,
             String searchText,
             String returnColumnText) throws Exception {
-        if((table==null)|| searchColumn=="" || searchText=="")
-            return "ERROR";
-        //xpath("//tbody/tr[contains(text(),'Maria Andres')]"))
-        WebElement tableRowElement = ((RemoteWebElement) table).findElement(By.
-                xpath("//tbody/tr[contains(.,'"+searchText+"')]"));
-        WebElement TableCell=tableRowElement.findElement(By.xpath("//td[text()='" + returnColumnText+"']"));
+        String tableCellText;
+        try{
+            if ((table == null) || searchColumn == "" || searchText == "")
+                return "ERROR";
+            WebElement tableRowElement = ((RemoteWebElement) table).findElement(By.
+                    xpath("//tbody/tr[contains(.,'" + searchText + "')]"));
 
-        return TableCell.getText();
+            WebElement TableCell = table.findElement(By.xpath("//tbody/tr[contains(.,'" + searchText + "')]/td[" + searchedColumnNameToIndexMap.get(searchColumn) + "]"));
+
+            tableCellText = TableCell.getText();
+            //Allure.addAttachment("My Cell Value", tableCellText);
+
+            Allure.step("My Cell Value="+tableCellText);
+            Allure.step("Expected searched value="+returnColumnText);
+            Allure.step("searched column="+searchColumn);
+            Allure.step("searched text to find correct row="+searchText);
+            if (false == tableCellText.equals("")) {
+                return TableCell.getText();
+            } else
+                return "ERROR";
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return "ERROR";
+    }
+
+    protected boolean isSearchedTextIsFromTheDesiredColumn(
+            String searchColumn,
+            String searchText,
+            String  returnColumnText){
+        WebElement tableRowElement = getWebDriver().findElement(By.
+                xpath("//table/tbody/tr[contains(.,'"+searchText+"')]"));
+        return false;
     }
 }

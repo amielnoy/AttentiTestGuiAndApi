@@ -60,6 +60,7 @@ public class mainPage extends PageFactoryInitializer {
         ExplicitWaiting.driver =getWebDriver();
         logger.debug("floating menu element= "+menuItem.getText());
         ExplicitWaiting.explicitWaitVisibilityOfElement(menuItem,10);
+        menuItem=getWebDriver().findElement(By.xpath("//*[@id='Col1']/ul/li["+index+"]/a"));
         menuItem.click();
         languageSelector =getWebDriver().findElement(By.id("ChooseLanguageDlgOpener"));
         ExplicitWaiting.explicitWaitElementToBeClickable(languageSelector,10);
